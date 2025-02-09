@@ -19,8 +19,8 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    flex-wrap:wrap;
     margin:0 auto;
-    
 }
 
 .logo_container {
@@ -36,7 +36,6 @@
     display:flex;
     justify-content: flex-start;
     align-items:center;
-    flex-wrap: nowrap;
     font-size:24px;
     font-weight:200;
 }
@@ -48,7 +47,8 @@
 
 .navigation {
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
     height:100%;
 }
 
@@ -56,8 +56,7 @@
     height:100%;
     display:flex;
     justify-content: flex-end;
-    padding:0 20px;
-    padding-left: 40px;
+    padding-left:40px;
 }
 
 .navigation li:last-child{
@@ -102,7 +101,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width:70%;
+    max-width:70%;
     color:white;
     height:auto;
     font-size:48px;
@@ -113,7 +112,7 @@
 
 .intro_text h4 {
     color:white;
-    width:85%;
+    max-width:85%;
     height:auto;
     font-size:22px;
     font-weight:200; 
@@ -157,5 +156,198 @@
     height:auto;
     max-width:100%;
     height:auto;
+}
+
+
+.info_container {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.inner_info_container {
+    max-width:1200px;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.info_block h2 {
+    display:flex;
+    align-items:start;
+    padding:45px;
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:80px;
+    flex:1 1 auto;
+    padding:0px 10px 100px 10px;
+}
+
+.boxes_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.image_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #3882F6;
+    border-radius: 20px;
+    border-width: 4px;
+    width: 150px;
+    height:150px;
+}
+
+.text_info p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.testimonial_container {
+    width: 100%;
+    height:450px;
+    display:flex;
+    background-color: #E5E7EB;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+.inner_testimonial_container {
+    max-width: 1200px;
+    height:auto;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
+}
+
+.testimonial_text h3 {
+    max-width: 70%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 34px;
+    color: #1f2937;
+    height:auto;
+    font-style:italic;
+    font-weight: 100;
+    padding-left:200px;
+}
+
+.next_testimonial_text h3 {
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left:170px;
+}
+
+.sign_container {
+    width: 100%;
+    height:auto;
+    display: block;
+    justify-content: center;
+    flex-flow:column wrap;
+    margin: 150px 0px;
+}
+
+.inner_sign_container {
+    margin:0 auto;
+    max-width: 1200px;
+    height: 150px;
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.main_text h4{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: 100px;
+}
+
+.main_text h3{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 100px;
+}
+
+.button_container {
+    display:flex;
+    justify-content: flex-start;
+    width: 330px;
+}
+
+.button_container button {
+    display:flex;
+    width: 130px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3882F6;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    border-width: 3px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3sease 0s;
+    border-color: white;
+}
+
+.copyright {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    background-color: #1f2937;
+}
+
+.copyright h6 {
+    width: 1200px;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    margin:0 auto;
+    color: white;
+}
+.copyright span {
+font-weight: 900;
 }
