@@ -1,25 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
 .container{
     width:100%;
-    height:100px;
+    height:auto;
     display:block;
     background-color: #1F2937;
 }
 
 .inner_container {
     max-width:1200px;
-    height:100%;
+    height:100px;
+    padding: 10px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    flex-wrap:wrap;
     margin:0 auto;
 }
 
@@ -35,6 +35,7 @@
     height:100%;
     display:flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items:center;
     font-size:24px;
     font-weight:200;
@@ -42,7 +43,7 @@
 
 .logo_container h1 span {
     font-weight: 900;
-    display:block;
+    display:flex;
 }
 
 .navigation {
@@ -78,8 +79,7 @@
 }
 
 .container_text {
-    max-width:100%;
-    padding: 10px;
+    width:100%;
     padding-bottom: 200px;
     height:auto;
     display: flex;
@@ -102,24 +102,24 @@
     justify-content: center;
     align-items: center;
     max-width:70%;
+    padding-left: 10px;
     color:white;
     height:auto;
-    font-size:48px;
+    font-size: clamp(24px, 5vw, 48px);
     font-weight:900; 
     margin-top: 150px;
-    flex:1 1 auto;
 }
 
 .intro_text h4 {
     color:white;
     max-width:85%;
+    padding-left: 5px;
     height:auto;
-    font-size:22px;
+    font-size: clamp(16px, 2.5vw, 22px);
     font-weight:200; 
     display:flex;
     align-items:center;
     justify-content: center;
-    flex:1 1 auto;
 }
 
 .intro_text button {
@@ -131,7 +131,7 @@
     color:white;
     background-color: #3882F6;
     padding: 5px;
-    margin-top: 20px;
+    margin:20px 5px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
@@ -153,7 +153,8 @@
 }
 
 .image_container img {
-    height:auto;
+    display:flex;
+
     max-width:100%;
     height:auto;
 }
@@ -189,7 +190,7 @@
 .boxes {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap:80px;
     flex:1 1 auto;
@@ -213,6 +214,7 @@
     border-width: 4px;
     width: 150px;
     height:150px;
+    overflow: hidden;
 }
 
 .text_info p {
@@ -225,45 +227,47 @@
 
 .testimonial_container {
     width: 100%;
-    height:450px;
+    height:auto;
     display:flex;
     background-color: #E5E7EB;
     flex-wrap: wrap;
-    padding-right: 10px;
+    padding-right: 0px;
 }
 
 .inner_testimonial_container {
     max-width: 1200px;
     height:auto;
     margin:0 auto;
+    padding: 150px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: end;
 }
 
 .testimonial_text h3 {
-    max-width: 70%;
+    max-width: 100%;
+    height:auto;
     display: flex;
     flex-wrap:wrap;
-    justify-content: flex-end;
+    justify-content: start;
     align-items: flex-end;
     font-size: 34px;
     color: #1f2937;
-    height:auto;
     font-style:italic;
     font-weight: 100;
-    padding-left:200px;
+    padding:0 150px 0 200px;
 }
 
 .next_testimonial_text h3 {
-    max-width: 70%;
+    max-width:100%;
+    height: auto;
     display: flex;
-    justify-content: flex-end;
-    align-items:flex-end;
+    justify-content: start;
+    align-items:start;
     font-size: 26px;
     font-weight: 700;
-    padding-left:170px;
+    padding:10px 250px 0 200px;
 }
 
 .sign_container {
@@ -278,7 +282,7 @@
 .inner_sign_container {
     margin:0 auto;
     max-width: 1200px;
-    height: 150px;
+    height: auto;
     display: flex;
     background-color: #3882F6;
     justify-content: space-between;
@@ -291,18 +295,20 @@
     display:flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    font-size: 16px;
+    padding-top: 50px;
+    font-size: 24px;
     font-weight: 900;
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 .main_text h3{
     display:flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    font-size: 14px;
+    padding-bottom: 50px;
+    font-size: 20px;
     font-weight: 100;
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 .button_container {
@@ -312,34 +318,41 @@
 }
 
 .button_container button {
-    display:flex;
     width: 130px;
     height: 40px;
+    padding: 5px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    display:flex;
     justify-content: center;
     align-items: center;
     color: white;
     background-color: #3882F6;
-    padding: 5px;
-    margin: 20px;
+    cursor: pointer;
+    border-color: white;
+    border-style: solid;
     border-radius: 10px;
     border-width: 3px;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3sease 0s;
-    border-color: white;
+    transition: 0.3s ease 0s;
+}
+
+.button_container button:hover {
+    color: rgb(32, 31, 31);
+    background-color: #ffc400;
+    border-color: black;
 }
 
 .copyright {
-    display: block;
-    flex-wrap: wrap;
+    display: flex;
+    bottom:0;
     width: 100%;
     height: 50px;
     background-color: #1f2937;
 }
 
-.copyright h6 {
-    width: 1200px;
+.copyright p {
+    max-width: 1200px;
     height: 100%;
     display:flex;
     justify-content: center;
@@ -349,5 +362,5 @@
     color: white;
 }
 .copyright span {
-font-weight: 900;
+    font-weight: 900;
 }
